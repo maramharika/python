@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <h1>Student perssonal information</h1>
+            <label for="name">Enter your full name:</label>
+            <input type="text" id="name" placeholder="Enter your full name"/>
+            <br><br>
+            <label for="Branch">Enter your branch:</label>
+            <input type="branch" id="branch" placeholder="enter your branch"/>
+            <br><br>
+            <label for="roll number">Enter your Roll number:</label>
+            <input type="roll number" id="roll number" placeholder="Enter your roll number"/>
+            <br><br>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" placeholder="Enter your email"/>
+            <br><br>
+            <label for="phone">Enter your phone number:</label>
+            <input type="phone" id="phone" pattern="[0-9]{10}" placeholder="Enter your phone number"/>
+            <br>
+            <br>
+            <label for="country">select your country:</label>
+            <select id="country" required>
+                <option value=""disabled selected>select your country</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="french">French</option>
+                <option value="korea">Korea</option>
+                <option value="thailand">Thailand</option>
+            </select>
+            <br>
+            <br>
+            <label>Enter your gender:</label>
+            <div class="gender-group">
+                <input type="radio" name="gender" value="male" id="male"/>
+                <label for="male">male</label>
+                <input type="radio" name="gender" value="female" id="female"/>
+                <label for="female">female</label>
+                <input type="radio" name="gender" value="others" id="gender"/>
+                <label for="others">others</label>
+            </div>
+            <br>
+        <label for="dob">Enter your dob:</label>
+        <input type="Date" id="dob" required/>
+        <br>
+        <br>
+        <label for="Address" >Enter you Address:</label>
+        <textarea id="Address" id="Address" required></textarea>
+            <br>
+            <br>
+           <center><input type="submit" value="submit"/></center> 
+        </fieldset>
+    </form>
+</body>
+</html>
